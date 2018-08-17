@@ -1,3 +1,8 @@
 table td {
   width: 121px;
 }
+
+td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+}
