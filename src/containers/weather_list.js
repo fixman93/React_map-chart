@@ -12,10 +12,11 @@ class WeatherList extends Component {
     //const lon = cityData.city.coord.lon
     //const lng = cityData.city.coord.lng
     // sa ES6 mozemo da napisemo ovako:
+    // <td><GoogleMap lon={lon} lat={lat}  /></td>
     const { lon, lat } = cityData.city.coord // Automacki prvo uzima posle coord, log pa lng promenjivu
     return (
       <tr key={name}>
-        <td><GoogleMap lon={lon} lat={lat}  /></td>
+        <td>{name}</td>
         <td><Chart data={temps} color="orange" units="K" /></td>
         <td><Chart data={pressure} color="blue" units="hPa" /></td>
         <td><Chart data={humidities} color="black" units="%" /></td>
